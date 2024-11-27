@@ -2,7 +2,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 function ScheduleSection({ data }: any) {
@@ -18,7 +17,7 @@ function ScheduleSection({ data }: any) {
   }
   
   return (
-    <section className="pt-24 bg-yellow" id="schedule">
+    <section className="py-24 bg-white" id="schedule">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-1 text-black bg-transparent border border-gray-200 rounded-full text-sm mb-4">
@@ -87,9 +86,6 @@ function ScheduleSection({ data }: any) {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center">
-      <Image src='/devfest-lanyard.png' alt="lanyard" className="px-20 py-6" width={800} height={100} />
-      </div> 
     </section>
   );
 }
